@@ -24,14 +24,12 @@ class Mentor:
             return 'Ошибка'
 
 class Lecturer(Mentor):
-    pass
+    def __init__(self, name, surname):
+        super().__init__(name, surname)
 
 class Reviewer(Mentor):
-    pass
-
-
-
-
+    def __init__(self, name, surname):
+        super().__init__(name, surname)
 
 best_student = Student('Ruoy', 'Eman', 'your_gender')
 best_student.courses_in_progress += ['Python']
@@ -45,5 +43,5 @@ cool_mentor.rate_hw(best_student, 'Python', 10)
 
 print(best_student.grades)
 
-vasya = Lecturer('Ruoy', 'Eman')
-print(vasya.name)
+lecturer_1 = Lecturer('Nikolay', 'Gusev')
+print(lecturer_1.name)
